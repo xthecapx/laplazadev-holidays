@@ -1,0 +1,21 @@
+{
+  "name": "laplazadev-holidays",
+  "version": "1.0.0",
+  "description": "Holidays",
+  "main": "index.js",
+  "scripts": {
+    "test": "holidays CO 2024"
+  },
+  "keywords": [
+    "holidays, laplazadev, thecap"
+  ],
+  "author": "thecap",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "date-fns": "^4.1.0"
+  },
+  "bin": {
+    "laplazadev-holidays": "./index.js"
+  }
+}
