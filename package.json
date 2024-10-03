@@ -1,21 +1,35 @@
 {
   "name": "laplazadev-holidays",
-  "version": "1.0.0",
-  "description": "Holidays",
+  "version": "1.1.0",
+  "description": "A Matrix-inspired CLI tool to display holidays for different countries",
   "main": "index.js",
-  "scripts": {
-    "test": "holidays CO 2024"
-  },
-  "keywords": [
-    "holidays, laplazadev, thecap"
-  ],
-  "author": "thecap",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^1.7.7",
-    "date-fns": "^4.1.0"
-  },
+  "type": "module",
   "bin": {
     "laplazadev-holidays": "./index.js"
-  }
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "holidays",
+    "cli",
+    "matrix",
+    "laplazadev",
+    "thecap"
+  ],
+  "author": "Thecap",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^5.0.0",
+    "date-fns": "^2.22.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xthecapx/laplazadev-holidays.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xthecapx/laplazadev-holidays/issues"
+  },
+  "homepage": "https://github.com/xthecapx/laplazadev-holidays#readme"
 }
