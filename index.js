@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import axios from 'axios';
-import { format } from 'date-fns';
 import chalk from 'chalk';
 import fs from 'fs/promises';
 import path from 'path';
@@ -72,8 +71,7 @@ async function getHolidays(country = 'CO', year = '2024') {
 
         console.log(chalk.green('\n[HOLIDAY_DATA_STREAM]'));
         for (const holiday of holidays) {
-            const formattedDate = format(new Date(holiday.date), 'yyyy.MMM.dd');
-            const output = chalk.green(`[${formattedDate}] `) + chalk.greenBright(holiday.name);
+            const output = chalk.green(`[${holiday.readableDate}] `) + chalk.greenBright(holiday.name);
             await typeWriter(output, 5);
         }
         console.log(chalk.green('[END_OF_STREAM]'));
